@@ -7,8 +7,8 @@ import java.net.URL;
 import java.util.Scanner;
 public class TravelExpensesCalculator {
   private int travelExpenses;
-  private int dollarRate;
-  TravelExpensesCalculator(int travelExpenses, int dollarRate) { this.travelExpenses = travelExpenses; this.dollarRate = dollarRate; }
+  private double dollarRate;
+  TravelExpensesCalculator(int travelExpenses, int extraExpenses, double dollarRate) { this.travelExpenses = travelExpenses + extraExpenses; this.dollarRate = dollarRate; }
 
-  public int toLIS() { return this.travelExpenses * dollarRate; }
+  public double toLIS() { return this.travelExpenses * dollarRate; }
 }
