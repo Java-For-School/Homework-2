@@ -1,8 +1,8 @@
 public class TriangleCalculator {
-    private int base;
-    private int height;
+    private double base;
+    private double height;
 
     TriangleCalculator(int base, int height) { this.base = base; this.height = height; }
 
-    public static double calculateArea() { return (this.base * this.height) / 2; }
+    public double calculateArea() { return (this.base * this.height) / 2; }
 }
